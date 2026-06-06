@@ -1,23 +1,25 @@
-  import axios from "axios";
+    import axios from "axios";
 
-  const API = axios.create({
-    baseURL: import.meta.env.VITE_API_URL,
-  });
+    const API = axios.create({
+      baseURL: import.meta.env.VITE_API_URL,
+    });
 
-  API.interceptors.request.use(
-    (config) => {
-      const token =
-        localStorage.getItem(
-          "token"
-        );
+    console.log("API URL:", import.meta.env.VITE_API_URL);
 
-      if (token) {
-        config.headers.Authorization =
-          `Bearer ${token}`;
+    API.interceptors.request.use(
+      (config) => {
+        const token =
+          localStorage.getItem(
+            "token"
+          );
+
+        if (token) {
+          config.headers.Authorization =
+            `Bearer ${token}`;
+        }
+
+        return config;
       }
+    );
 
-      return config;
-    }
-  );
-
-  export default API;
+    export default API;
