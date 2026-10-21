@@ -2,13 +2,13 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
-  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
-  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
-  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
-  appId: import.meta.env.VITE_FIREBASE_APP_ID,
-  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
+  apiKey: "AIzaSyBmOh_kb5R3ahoLyDe8qUCFm96fKby-7Ws",
+  authDomain: "kanban-board-eb784.firebaseapp.com",
+  projectId: "kanban-board-eb784",
+  storageBucket: "kanban-board-eb784.firebasestorage.app",
+  messagingSenderId: "894315102968",
+  appId: "1:894315102968:web:25e6d9cb8556a32937f10d",
+  measurementId: "G-M5P4G38J9P",
 };
 
 const app = initializeApp(firebaseConfig);
