@@ -265,4 +265,4 @@ The server is configured to use port `5000` by default.
 Once the server starts, the backend will attempt to connect to MongoDB. Check your terminal for startup messages and any database connection errors.
 
 ## 🔐 Backend Part:
-github-repo-> https://github.com/SupainNandy/kanban-board-backend
+github-repo-> https://github.com/SupainNandy/kanban-board
